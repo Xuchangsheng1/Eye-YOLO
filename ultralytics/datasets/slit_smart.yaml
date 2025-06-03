@@ -1,0 +1,25 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# COCO 2017 dataset https://cocodataset.org by Microsoft
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco/
+# Example usage: yolo train data=coco.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco  ← downloads here (20.1 GB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ./slit_smart_traincoco # dataset root dir
+train: train.txt
+val: test.txt
+test: test.txt
+# Classes
+names:
+  0: conjunctival injection
+  1: pterygium
+  2: keratitis
+  3: pingueculae
+  4: cataract
+  5: corneal degeneration
+  6: conjunctival tumor
+  7: eyelid tumor
+
